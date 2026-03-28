@@ -110,3 +110,4 @@ Possible Phase 2 enhancements:
 - Enable NSG flow logs for additional monitoring visibility
 - Add Microsoft Defender for Cloud or Microsoft Sentinel for alerting and telemetry
 - Expand the environment with additional protected workloads and logging pipelines
+- 
