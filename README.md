@@ -79,14 +79,15 @@ Azure Network Watcher IP Flow Verify was used to confirm expected traffic behavi
 
 ## Screenshots
 
-Suggested screenshots for this repo:
+Project evidence and validation screenshots are stored in the [`screenshots/`](./screenshots) folder.
 
-- `screenshots/subnets-overview.png`
-- `screenshots/dmz-inbound-ssh-allow.png`
-- `screenshots/dmz-outbound-deny-rules.png`
-- `screenshots/ipflow-ssh-allowed.png`
-- `screenshots/ipflow-dmz-to-internal-denied.png`
-- `screenshots/ipflow-dmz-to-security-denied.png`
+### Included validation evidence
+- Virtual network and subnet layout
+- Inbound SSH allow rule scoped to a trusted public IP
+- DMZ outbound deny rules protecting Internal and Security segments
+- Azure Network Watcher IP Flow Verify results confirming expected allow/deny behavior
+
+For the full screenshot index, see [`screenshots/README.md`](./screenshots/README.md).
 
 ## Skills Demonstrated
 
