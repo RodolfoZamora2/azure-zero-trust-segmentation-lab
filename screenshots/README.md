@@ -1,36 +1,18 @@
 # Screenshots
 
-Add the following screenshots to this folder and reference them from the main README.
+This folder contains validation evidence and supporting visuals for the Azure Zero Trust Segmentation Lab.
 
-## Suggested Files
+## Screenshot Index
 
-- `subnets-overview.png`
-  - Show `DMZ-Subnet`, `Internal-Subnet`, and `Security-Subnet`
-  - Show each subnet associated with its NSG
+### Network Build
+- `subnets-overview.png` — Azure virtual network and segmented subnet layout
+- `dmz-inbound-ssh-allow.png` — NSG rule allowing inbound SSH only from the trusted public IP
+- `dmz-outbound-deny-rules.png` — NSG deny rules blocking outbound traffic from the DMZ to protected segments
 
-- `dmz-inbound-ssh-allow.png`
-  - Show the inbound SSH rule on `dmz-subnet-nsg`
-  - Show source restricted to trusted public IP `/32`
+### Validation / Testing
+- `ipflow-ssh-allowed.png` — Azure Network Watcher IP Flow Verify showing trusted SSH access is allowed
+- `ipflow-dmz-to-internal-denied.png` — IP Flow Verify showing DMZ-to-Internal traffic is denied
+- `ipflow-dmz-to-security-denied.png` — IP Flow Verify showing DMZ-to-Security traffic is denied
 
-- `dmz-outbound-deny-rules.png`
-  - Show the outbound deny rules blocking traffic to:
-    - `10.0.2.0/24`
-    - `10.0.3.0/24`
-
-- `ipflow-ssh-allowed.png`
-  - Show IP Flow Verify allowing inbound SSH from the trusted public IP
-
-- `ipflow-dmz-to-internal-denied.png`
-  - Show IP Flow Verify denying DMZ to Internal traffic
-
-- `ipflow-dmz-to-security-denied.png`
-  - Show IP Flow Verify denying DMZ to Security traffic
-
-## Screenshot Goal
-
-The screenshots should prove:
-
-1. the network was segmented
-2. access to the DMZ was restricted
-3. lateral movement from DMZ was blocked
-4. the controls were validated with Azure tooling
+## Notes
+These screenshots are included to demonstrate segmentation design, access control hardening, and validation of Zero Trust network boundaries in Azure.
