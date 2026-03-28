@@ -106,7 +106,7 @@ Internet (trusted public IP only)
         v
    DMZ-Subnet (10.0.1.0/24)
         |
-   [attacker-VM]
+   [dmz-test-vm]
         X
         | blocked to Internal
         X
